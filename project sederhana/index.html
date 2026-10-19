@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kantin sekolah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"></div>
+    <header>
+        <h1>
+           <strong>KANTIN SEKOLAH</strong> 
+        </h1>
+        <p>Selamat Datang di Kantin Sekolah</p>
+    </header>
+    <div class="card"></div>
+    <h2>
+        Daftar Menu
+    </h2>
+    <div class="Menu">
+        <div class="Menu Item"></div>
+    </div>
+   <table>
+    <tr>
+        <th>No</th>
+        <th>Menu</th>
+        <th>Harga</th>
+        <th>Jumlah</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>Nasi Uduk</td>
+        <td>Rp7.000</td>
+        <td>
+            <input type="number" id="nasi" min="0" value="0">
+        </td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Mie Ayam</td>
+        <td>Rp12.000</td>
+        <td>
+            <input type="number" id="mie" min="0" value="0">
+        </td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Kebab</td>
+        <td>Rp5.000</td>
+        <td>
+            <input type="number" id="kebab" min="0" value="0">
+        </td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>Es Teh</td>
+        <td>Rp5.000</td>
+        <td>
+            <input type="number" id="esteh" min="0" value="0">
+        </td>
+    </tr>
+
+    <tr>
+        <td>5</td>
+        <td>Air Mineral</td>
+        <td>Rp4.000</td>
+        <td>
+            <input type="number" id="air" min="0" value="0">
+    </tr>
+
+    <tr>
+        <td>6</td>
+        <td>Jus</td>
+        <td>Rp5.000</td>
+        <td>
+            <input type="number" id="jus" min="0" value="0">
+        </td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Es Jeruk</td>
+        <td>Rp5.000</td>
+        <td>
+            <input type="number" id="esjeruk" min="0" value="0">
+        </td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Jasuke</td>
+        <td>Rp5.000</td>
+        <td>
+            <input type="number" id="jasuke" min="0" value="0">
+        </td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Burger</td>
+        <td>Rp5.000</td>
+        <td>
+            <input type="number" id="burger" min="0" value="0">
+        </td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Spagetti</td>
+        <td>Rp5.000</td>
+        <td>
+            <input type="number" id="spagetti" min="0" value="0">
+        </td>
+    </tr>
+</table>
+
+        <div class="card">
+            <h2>
+                Data Pelanggan
+            </h2>
+            <label>Nama Pelanggan</label>
+            <input type="text" id="nama" placeholder="Masukkan Nama">
+
+            <label>Total Pembayaran</label>
+            <input type="text" id="Total" placeholder="Masukkan Total Pembayaran Anda">
+            <button onclick="hitungTotal()">HITUNG TOTAL</button>
+            <div id="hasil" class="card hasil"></div>
+            <div id="Struk pembayaran"></div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
